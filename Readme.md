@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
-* Студент: [Nataliya Malikova](https://up.htmlacademy.ru/javascript/32/user/2252007).
-* Наставник: `Неизвестно`.
+- Студент: [Nataliya Malikova](https://up.htmlacademy.ru/javascript/32/user/2252007).
+- Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k).
 
 ---
 
