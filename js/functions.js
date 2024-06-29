@@ -6,56 +6,56 @@
   */
 
 // !!! Не оптимизированная функция. Работает
-// const checkStringLength = (string, maxLength) => {
-//   if (string.length <= maxLength) {
-//     console.log(true);
-//     return true;
-//   } else {
-//     console.log(false);
-//     return false;
-//   }
-// };
+const checkStringLength = (string, maxLength) => {
+  if (string.length <= maxLength) {
+    console.log(true);
+    return true;
+  } else {
+    console.log(false);
+    return false;
+  }
+};
 
 // !!! Оптимизированная функция. Не работает:
-// const checkStringLength = (string, maxLength) => string.length <= maxLength;
+const checkStringLength = (string, maxLength) => string.length <= maxLength;
 
-// // проверить строку длиной 27, макс длина 20  - false
-// checkStringLength("длинная строка для проверки", 20);
+// проверить строку длиной 27, макс длина 20  - false
+checkStringLength('длинная строка для проверки', 20);
 
-// // проверить строку длиной 33, макс длина 20  - false
-// checkStringLength("очень длинная строка для проверки", 20);
+// проверить строку длиной 33, макс длина 20  - false
+checkStringLength('очень длинная строка для проверки', 20);
 
-// // проверить строку длиной 19, макс длина 20  - true
-// checkStringLength("строка для проверки", 20);
+// проверить строку длиной 19, макс длина 20  - true
+checkStringLength('строка для проверки', 20);
 
-// // проверить строку длиной 20, макс длина 20  - true
-// checkStringLength("строка для проверки ", 20);
+// проверить строку длиной 20, макс длина 20  - true
+checkStringLength('строка для проверки ', 20);
 
-// // проверить строку длиной 8, макс длина 20  - true
-// checkStringLength("проверка", 20);
+// проверить строку длиной 8, макс длина 20  - true
+checkStringLength('проверка', 20);
 
-// // проверить строку длиной 16, макс длина 15  - false
-// checkStringLength("проверить строку", 15);
+// проверить строку длиной 16, макс длина 15  - false
+checkStringLength('проверить строку', 15);
 
 // Task 2
 // !!! Не оптимизированная функция
-// function isPalindrom(string) {
-//   string = string.toLowerCase();
-//   string = string.replaceAll(" ", "");
+function isPalindrom(string) {
+  string = string.toLowerCase();
+  string = string.replaceAll(' ', '');
 
-//   let reversed = "";
+  let reversed = '';
 
-//   for (let i = string.length - 1; i >= 0; i--) {
-//     reversed = reversed + string[i];
-//   }
-//   console.log(string === reversed);
-//   return string === reversed;
-// }
+  for (let i = string.length - 1; i >= 0; i--) {
+    reversed = reversed + string[i];
+  }
+  console.log(string === reversed);
+  return string === reversed;
+}
 
 // !!! Оптимизированная функция
 const isPalindrom = (string) => {
-  const cleaned = string.toLowerCase().replaceAll(" ", "");
-  const reversed = cleaned.split("").reverse().join("");
+  const cleaned = string.toLowerCase().replaceAll(' ', ');
+  const reversed = cleaned.split(').reverse().join(');
 
   console.log(cleaned === reversed);
   return cleaned === reversed;
@@ -72,18 +72,18 @@ const isPalindrom = (string) => {
 */
 
 // Строка является палиндромом
-isPalindrom("топот"); // true
+isPalindrom('топот'); // true
 // Несмотря на разный регистр, тоже палиндром
-isPalindrom("ДовОд"); // true
+isPalindrom('ДовОд'); // true
 // Это не палиндром
-isPalindrom("Кекс"); // false
+isPalindrom('Кекс'); // false
 // Palindrom
-isPalindrom("nurses run"); // true
+isPalindrom('nurses run'); // true
 // Palindrom
-isPalindrom("Redivider"); // true
+isPalindrom('Redivider'); // true
 // Это не палиндром
-isPalindrom("Academy"); // false
+isPalindrom('Academy'); // false
 // Palindrom
-isPalindrom("racecar"); // true
+isPalindrom('racecar'); // true
 // Это палиндром
-isPalindrom("Лёша на полке клопа нашёл "); // true
+isPalindrom('Лёша на полке клопа нашёл '); // true
