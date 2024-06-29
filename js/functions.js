@@ -17,7 +17,7 @@ const checkStringLength = (string, maxLength) => {
 };
 
 // !!! Оптимизированная функция. Не работает:
-let checkStringLength = (string, maxLength) => string.length <= maxLength;
+// let checkStringLength = (string, maxLength) => string.length <= maxLength;
 
 // проверить строку длиной 27, макс длина 20  - false
 checkStringLength('длинная строка для проверки', 20);
@@ -39,23 +39,23 @@ checkStringLength('проверить строку', 15);
 
 // Task 2
 // !!! Не оптимизированная функция
-function isPalindrom(string) {
-  string = string.toLowerCase();
-  string = string.replaceAll(' ', '');
+// function isPalindrom(string) {
+//   string = string.toLowerCase();
+//   string = string.replaceAll(' ', '');
 
-  let reversed = '';
+//   let reversed = '';
 
-  for (let i = string.length - 1; i >= 0; i--) {
-    reversed = reversed + string[i];
-  }
-  console.log(string === reversed);
-  return string === reversed;
-}
+//   for (let i = string.length - 1; i >= 0; i--) {
+//     reversed = reversed + string[i];
+//   }
+//   console.log(string === reversed);
+//   return string === reversed;
+// }
 
 // !!! Оптимизированная функция
 const isPalindrom = (string) => {
-  const cleaned = string.toLowerCase().replaceAll(' ', ');
-  const reversed = cleaned.split(').reverse().join(');
+  const cleaned = string.toLowerCase().replaceAll(' ', '');
+  const reversed = cleaned.split('').reverse().join('');
 
   console.log(cleaned === reversed);
   return cleaned === reversed;
