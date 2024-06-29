@@ -17,7 +17,7 @@ const checkStringLength = (string, maxLength) => {
 };
 
 // !!! Оптимизированная функция. Не работает:
-const checkStringLength = (string, maxLength) => string.length <= maxLength;
+let checkStringLength = (string, maxLength) => string.length <= maxLength;
 
 // проверить строку длиной 27, макс длина 20  - false
 checkStringLength('длинная строка для проверки', 20);
