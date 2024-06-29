@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 // Task 1
 /* -принимает строку, которую нужно проверить, и максимальную длину и возвращает
       true, если строка меньше или равна указанной длине,
@@ -5,7 +6,7 @@
       false, если строка длиннее.
   */
 
-// !!! Не оптимизированная функция. Работает
+// !!! Не оптимизированная функция. Работает:
 const checkStringLength = (string, maxLength) => {
   if (string.length <= maxLength) {
     console.log(true);
@@ -14,7 +15,8 @@ const checkStringLength = (string, maxLength) => {
     console.log(false);
     return false;
   }
-};
+}
+
 
 // !!! Оптимизированная функция. Не работает:
 // let checkStringLength = (string, maxLength) => string.length <= maxLength;
