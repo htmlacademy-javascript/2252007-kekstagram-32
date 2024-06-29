@@ -15,7 +15,7 @@ const checkStringLength = (string, maxLength) => {
     console.log(false);
     return false;
   }
-}
+};
 
 
 // !!! Оптимизированная функция. Не работает:
