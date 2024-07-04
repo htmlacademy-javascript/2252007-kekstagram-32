@@ -17,9 +17,8 @@ const checkStringLength = (string, maxLength) => {
   }
 };
 
+checkStringLength('длинная строка для проверки', 20)
 
-// !!! Оптимизированная функция. Не работает:
-// let checkStringLength = (string, maxLength) => string.length <= maxLength;
 
 // проверить строку длиной 27, макс длина 20  - false
 checkStringLength('длинная строка для проверки', 20);
@@ -89,3 +88,7 @@ isPalindrom('Academy'); // false
 isPalindrom('racecar'); // true
 // Это палиндром
 isPalindrom('Лёша на полке клопа нашёл '); // true
+
+
+// !!! Оптимизированная функция. Не работает:
+// let checkStringLength = (string, maxLength) => string.length <= maxLength;
