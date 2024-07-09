@@ -7,17 +7,9 @@
   */
 
 // !!! Не оптимизированная функция. Работает:
-const checkStringLength = (string, maxLength) => {
-  if (string.length <= maxLength) {
-    console.log(true);
-    return true;
-  } else {
-    console.log(false);
-    return false;
-  }
-};
+const checkStringLength = (string, maxLength) => string.length <= maxLength;
 
-checkStringLength('длинная строка для проверки', 20)
+checkStringLength('длинная строка для проверки', 20);
 
 
 // проверить строку длиной 27, макс длина 20  - false
